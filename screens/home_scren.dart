@@ -12,23 +12,22 @@ class HomeScreen extends StatelessWidget {
 final categorias = [
   {
     'nombre': 'Tecnología',
-    'imagen': 'https://cdn-icons-png.flaticon.com/512/6062/6062646.png'
+    'imagen': 'assets/logo.png'
   },
   {
     'nombre': 'Deportes',
-    'imagen': 'https://cdn-icons-png.flaticon.com/512/889/889492.png'
-  },
+'imagen': 'assets/logo.png'  },
   {
     'nombre': 'Música',
-    'imagen': 'https://cdn-icons-png.flaticon.com/512/727/727245.png'
+    'imagen': 'assets/logo.png'
   },
   {
     'nombre': 'Cocina',
-    'imagen': 'https://cdn-icons-png.flaticon.com/512/3075/3075977.png'
+    'imagen': 'assets/logo.png'
   },
   {
     'nombre': 'Viajes',
-    'imagen': 'https://cdn-icons-png.flaticon.com/512/3062/3062634.png'
+    'imagen': 'assets/logo.png'
   },
 ];
     final articulos = List.generate(
@@ -97,7 +96,7 @@ final categorias = [
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(8),
-          child: Image.network(
+          child: Image.asset(
             categoria['imagen']!,
             width: 60,
             height: 60,

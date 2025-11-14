@@ -1,4 +1,5 @@
 import 'package:app_n/screens/detalles.dart';
+import 'package:app_n/screens/example.dart';
 import 'package:app_n/screens/home_scren.dart';
 import 'package:flutter/material.dart';
 
@@ -14,8 +15,9 @@ class MyApp extends StatelessWidget {
       home: HomeScreen() */
       initialRoute: '/',
       routes: {
-        '/': (context) => const HomeScreen(),
+        '/': (context) => const ScreenDos(),
         '/detalle': (_) =>  const DetallesS(), // This should ideally point to DetallesS with parameters
+        'screen2': (_) => const HomeScreen(),
       },
     );
   }
